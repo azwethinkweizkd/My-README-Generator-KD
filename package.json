@@ -1,14 +1,23 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azwethinkweizkd/My-README-Generator-KD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azwethinkweizkd/My-README-Generator-KD/issues"
+  },
+  "homepage": "https://github.com/azwethinkweizkd/My-README-Generator-KD#readme",
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node application to generate README.md files for projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kevin Devlin",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "devDependencies": {}
 }
