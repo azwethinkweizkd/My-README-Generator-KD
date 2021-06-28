@@ -74,7 +74,7 @@ function init() {
     console.log("Generating README...");
     writeToFile(
       inquirerResponses.filePath,
-      "testREADME.md",
+      "README.md",
       generateMarkdown({ ...inquirerResponses })
     );
   });

@@ -56,7 +56,7 @@ function generateMarkdown(data) {
   ${data.userName}
   ## Test Instructions
   ${data.testIntructions}
-  ##License
+  ## License
   ${renderLicenseSection(data.license)}
 `;
 }
