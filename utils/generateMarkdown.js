@@ -19,7 +19,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return "[License](#License)";
+    return "- ### [License](#License)";
   } else {
     return "";
   }
@@ -29,7 +29,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `This project was created using ${license}`;
+    return `## License
+    This project was created using ${license}`;
   } else {
     return "";
   }
@@ -42,21 +43,21 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [Test Instructions](#testInstructions)
-  - ${renderLicenseLink(data.license)}
+  - ### [Installation](#installation)
+  - ### [Usage](#usage)
+  - ### [Contribution](#contribution)
+  - ### [Test Instructions](#testInstructions)
+  ${renderLicenseLink(data.license)}
   ## Installation
   ${data.installation}
   ## Usage
   ${data.usage}
   ## Contribution
   ${data.contribution}
-  ${data.userName}
+  GitHub Username:
+      ${data.userName}
   ## Test Instructions
   ${data.testIntructions}
-  ## License
   ${renderLicenseSection(data.license)}
 `;
 }
